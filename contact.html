@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech2etc Ecommerce Tutorial</title>
+    <link rel="stylesheet" href="boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsev.css">
+</head>
+
+
+<section id="header">
+    <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">contact</a></li>
+            <li id="lg-bag"><a href="cart.html"> <i class="fa-solid fa-bag-shopping"></i></a></li>
+            <a href="#" id="close" class="hedin"> <i class="fa-solid fa-xmark"></i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+        <a href="cart.html"> <i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+</section>
+
+<section id="page-header" class="about-header">
+
+    <h2>#let`s_talk</h2>
+    <p>LEAVE A MESSAGE, We love ti hear from you!</p>
+
+</section>
+
+
+
+
+<div class="container">
+
+	<h1 class="brand"><span>Phoenix Web Design</span></h1>
+
+	<div class="wrapper">
+
+		<!-- COMPANY INFORMATION -->
+		<div class="company-info">
+			<h3>Abdel-Rhman Mohmed</h3>
+
+			<ul>
+				<li><i class="fa fa-road"></i> 44 Main Street</li>
+				<li> <i class="fa fa-phone"></i> 01157237318</li>
+				<li><i class="fa fa-envelope"></i> AbdoSheko48@gmail.com</li>
+			</ul>
+		</div>
+		<!-- End .company-info -->
+
+		<!-- CONTACT FORM -->
+		<div class="contact">
+			<h3>E-mail Us</h3>
+
+			<form id="contact-form">
+
+				<p>
+					<label>Name</label>
+					<input type="text" name="name" id="name" required>
+				</p>
+
+				<p>
+					<label>Company</label>
+					<input type="text" name="company" id="company">
+				</p>
+
+				<p>
+					<label>E-mail Address</label>
+					<input type="email" name="email" id="email" required>
+				</p>
+
+				<p>
+					<label>Phone Number</label>
+					<input type="text" name="phone" id="phone">
+				</p>
+
+				<p class="full">
+					<label>Message</label>
+					<textarea name="message" rows="5" id="message"></textarea>
+				</p>
+
+				<p class="full">
+					<button type="submit">Submit</button>
+				</p>
+
+			</form>
+			<!-- End #contact-form -->
+		</div>
+		<!-- End .contact -->
+
+	</div>
+	<!-- End .wrapper -->
+</div>
+<!-- End .container -->
+
+
+
+
+
+<section id="Newsletter" class="section-p1 section-m1">
+    <div class="newstexte">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get E-mail updataes about our shop and <span>special offers.</span></p>
+    </div>
+    <div class="form">
+        <input type="text" name="" id="" placeholder="Your email address">
+        <button class="normal">Sign Up </button>
+    </div>
+</section>
+<!-- footer -->
+<footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="img/logo.png" alt="">
+        <h4>contact :</h4>
+        <p> <strong>Address:</strong> Minya Al Qamh</p>
+        <p> <strong>Phone:</strong>+01157237318</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Stor Or Google Play</p>
+        <div class="row">
+            <img src="img/pay/app.jpg" alt="">
+
+            <img src="img/pay/play.jpg" alt="">
+        </div>
+        <p>Secured Payment Geteways</p>
+        <img src="img/pay/pay.png" alt="">
+
+    </div>
+    <div class="copyright">
+        <p>@ 2024, Abdelrhman Mohmed -HTML CSS Ecommerce Template</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+<script>
+    const form = document.querySelector("form")
+    var userName = document.getElementById('name');
+    var phone = document.getElementById('phone');
+    var email = document.getElementById('Email');
+    var message = document.getElementById('massage');
+
+    function emailSend() {
+
+
+        var messageBody = "Name " + userName +
+            "<br/> Phone " + phone +
+            "<br/> Phone " + message +
+            "<br/> Email " + email;
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "AbdoSheko48@gmail.com",
+            Password: "A1745E93B36C19224239FF59BEFDC5E8F2DD",
+            To: 'AbdoSheko48@gmail.com',
+            From: "AbdoSheko48@gmail.com",
+            Subject: "This is the subject",
+            Body: messageBody
+        }).then(
+            message => {
+                if (message == 'OK') {
+                    Swal.fire({
+                        title: "Good job!",
+                        text: "You clicked the button!",
+                        icon: "success"
+                    });
+                }
+                else {
+                    swal("Error", "You clicked the button!", "error");
+                }
+            }
+        );
+    }
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        emailSend();
+    });
+</script>
+
+
+
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
